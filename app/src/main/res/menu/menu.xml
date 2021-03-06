@@ -1,0 +1,46 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+
+    <item android:id="@+id/menuUpdate"
+        android:icon="@drawable/menu"
+        android:title="hello"
+        app:showAsAction="always"/>
+
+    <item android:title="@string/home"
+        android:id="@+id/menu_home"
+        android:icon="@android:drawable/ic_dialog_dialer"
+
+        app:showAsAction="always"
+
+        />
+
+
+    <item android:id="@+id/menu_dest"
+        android:title="@string/destination" />
+    <item android:id="@+id/menu_booking"
+        android:title="@string/booking" />
+    <item android:id="@+id/menu_book"
+        android:title="@string/book_flight" />
+    <item android:title="@string/login"
+        android:id="@+id/menu_log"
+        />
+    <item android:id="@+id/menu_share"
+        android:title="@string/btS"
+        />
+    <item android:id="@+id/menu_last_show"
+        android:title="@string/btShow"
+        />
+    <item android:title="@string/btC"
+        android:id="@+id/menu_contact"
+       />
+    <item android:id="@+id/menu_contact_dev"
+        android:title="@string/btContDev"
+        />
+
+
+
+
+</menu>

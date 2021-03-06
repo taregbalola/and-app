@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layoutDirection="rtl"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        app:srcCompat="@drawable/flight"
+        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <Button
+            android:text="@string/btL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btLogin"
+            android:layout_below="@+id/btDestination"
+            android:layout_toLeftOf="@+id/btBook"
+            android:layout_alignLeft="@+id/btDestination"
+            android:layout_alignStart="@+id/btDestination"
+            android:onClick="Log" />
+
+        <Button
+            android:text="@string/btC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btBook"
+            android:id="@+id/btContact"
+            android:layout_alignRight="@+id/btBook"
+            android:layout_alignEnd="@+id/btBook"
+            android:layout_toRightOf="@+id/btDestination"
+            android:layout_toEndOf="@+id/btDestination"
+            android:onClick="Contact" />
+
+        <Button
+            android:text="@string/btB"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btBook"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="57dp"
+            android:onClick="Book" />
+
+        <Button
+            android:text="@string/btD"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btDestination"
+            android:layout_above="@+id/btContact"
+            android:layout_toLeftOf="@+id/btBook"
+            android:layout_toStartOf="@+id/btBook"
+            style="@style/Widget.AppCompat.Button.Small"
+            />
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>
